@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Topic 02</title>
+
+    <meta name="description" content="CSS practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Insert content here! -->
+
+    <header>
+      <h1>Console example...</h1>
+    </header>
+
+    <section>
+      <article>
+        <h3>Using EventEmitter class...</h3>
+        <p>
+          eventTest = new EventEmitter();<br>
+          <br>
+          eventTest.on("myEvent", () => console.log("I'm happening"))<br>
+          <br>
+          eventTest.on("myEvent", () => console.log("I'm happening again"))<br>
+          <br>
+          eventTest.emit("myEvent")<br>
+          <br>
+          eventTest.off("myEvent", () => console.log("I'm happening again"))<br>
+          <br>
+          eventTest.emit("myEvent")<br>
+          <br>
+        </p>
+        <hr>
+      </article>
+
+      <article>
+        <h3>Example of extending a movie with Social (Ex04)...</h3>
+        <p>
+          starwars = new Movie("Star wars Ep. VI", 1985, 60);<br>
+          starwars.share("R2D2");<br>
+          //An error will occur (starwars hasn't got share method)<br>
+          <br>
+          mixinExtendClass(starwars, Social);<br>
+          starwars.share("R2D2");<br>
+          //Now it will work, the object has extended Social<br>
+        </p>
+        <br>
+        <hr>
+
+      </article>
+
+      <article>
+        <h3>Setting up movie events (same class as listener Ex02)...</h3>
+        <p>
+          lordOfTheRings = new Movie("The lord of the rings", 2000, 60);<br>
+          <br>
+          lordOfTheRings.on('play', (movie) => {<br>
+            console.log(`${movie.name}: is now playing...`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('pause', (movie) => {<br>
+            console.log(`${movie.name}: has been paused...`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('resume', (movie) => {<br>
+            console.log(`${movie.name}: resumed playing...`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('finish', (movie) => {<br>
+            console.log(`${movie.name}: has finished playing...`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('playTick', (movie) => {<br>
+            console.log(`${movie.name}: ${movie.status.playTime.toTimeString().substring(0, 8)}`);<br>
+          });<br>
+        </p>
+        <br>
+        <hr>
+      </article>
+
+      <article>
+        <h3>Setting up movie events (third party class as listener Ex03)...</h3>
+        <p>
+          lordOfTheRings = new Movie("The lord of the rings", 2000, 60);<br>
+          log = new Logger();<br>
+          <br>
+          lordOfTheRings.on('play', (movie) => {<br>
+            log.log(`${movie.name} - play`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('pause', (movie) => {<br>
+            log.log(`${movie.name} - pause`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('resume', (movie) => {<br>
+            log.log(`${movie.name} - resume`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('finish', (movie) => {<br>
+            log.log(`${movie.name} - finish`);<br>
+          });<br>
+          <br>
+          lordOfTheRings.on('playTick', (movie) => {<br>
+            log.log(`${movie.name} - playing(${movie.status.playTime.toTimeString().substring(0, 8)})`);<br>
+          });<br>
+        </p>
+        <br>
+        <hr>
+      </article>
+
+      <article>
+        <h3>Using Movie class...</h3>
+        <p>
+          lordOfTheRings = new Movie("The lord of the rings", 2000, 60);<br>
+          <br>
+          lordOfTheRings.play();<br>
+          <br>
+          lordOfTheRings.pause();<br>
+          <br>
+          lordOfTheRings.resume();<br>
+          <br>
+        </p>
+        <hr>
+      </article>
+
+    </section>
+
+    <footer>
+      <p>@Galias <a href="mailto:alias_gerardo@yahoo.com.ar">Contact!</a></p>
+    </footer>
+
+  </body>
+
+</html>

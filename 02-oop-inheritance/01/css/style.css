@@ -1,0 +1,11 @@
+html {
+  font-family: monospace, arial, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: auto;
+  width: 90%;
+  margin: 25px auto;
+
+}
