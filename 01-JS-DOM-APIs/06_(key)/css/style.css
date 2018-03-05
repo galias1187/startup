@@ -1,0 +1,76 @@
+* {
+  font-size: 14px;
+  font-family: monospace, arial, sans-serif;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+
+body {
+  display: block;
+  height: auto;
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  border: 1px dotted black;
+  background-color: white;
+  overflow-x: scroll;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  margin-top: 25px;
+}
+
+textarea {
+  padding: 10px;
+}
+
+
+#matrix-input {
+  width: 100%;
+}
+
+table {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 0px;
+  border: 1px dotted grey;
+  overflow-x: scroll;
+}
+
+thead {
+  text-align: center;
+}
+
+thead tr {
+  background-color: #2196F3;
+  margin: auto 0;
+  border-radius: 0px;
+}
+
+tbody tr {
+  border-bottom: .5px dotted grey;
+  padding: .1em 2em .1em;
+}
+
+td {
+  display: table-cell;
+  margin: .2em 0;
+  border-radius: 0px;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+td:not(thead td) {
+  margin: 0.25em 3em;
+}

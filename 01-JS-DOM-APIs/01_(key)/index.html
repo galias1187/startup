@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Topic 01: Exercise 01 (key)</title>
+
+    <meta name="description" content="CSS practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+
+    <header>
+      <h1>HTTP requester</h1>
+    </header>
+
+    <section id="main-section">
+      <header>
+        <h2>Main section</h2>
+      </header>
+
+      <article>
+        <h3>Random Chuck Norris joke...</h3>
+        <p id="result-text"></p>
+      </article>
+
+      <button type="button" name="alertMsgPopup"
+              onclick="httpRequest(jokeButtonCfg)">
+        Load a joke!
+      </button>
+
+    </section>
+
+    <aside id="sidebar">
+
+      <label for="search-keys-input">Search in github: </label>
+      <input id="search-keys-input" type="text" value="" placeholder="JavaScript">
+
+      <button type="button" name="githubQueryA" onclick="queryGithubRepos()">
+        Query git hub repo!
+      </button>
+
+      <ul id="result-list">
+      </ul>
+
+    </aside>
+
+
+    <section class="fading-pane">
+      <h2>Hello World</h2>
+    </section>
+
+    <footer>
+      <p>
+        @Galias
+        <a href="mailto:alias_gerardo@yahoo.com.ar">
+          Contact!
+        </a>
+      </p>
+    </footer>
+    
+  </body>
+
+  <!-- After some corrections W3C shows: Document checking completed. No errors or warnings to show.-->
+
+</html>

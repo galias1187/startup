@@ -1,0 +1,66 @@
+/* W3C validator: ¡Enhorabuena! No error encontrado. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: monospace, arial, sans-serif;
+}
+
+
+footer {
+  clear: both;
+}
+
+header h1 {
+  text-indent: 15px;
+}
+
+footer p {
+  text-indent: 15px;
+}
+
+aside,
+section:not(.fading-pane) {
+  display: block;
+  height: 450px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
+
+
+aside {
+  width: calc(40% - 30px);
+  overflow-y: auto;
+  float: right;
+}
+
+/* Centers all section text */
+section:not(.fading-pane) {
+  width: calc(60% - 30px);
+  display: block;
+  text-align: center;
+  float:left;
+}
+
+/* Hidden section must be originally visible and fade when load finishes */
+.fading-pane {
+  position: fixed;
+  opacity: 1;
+  background-color: #616161;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  height: auto;
+  width: 60%;
+  top: 40%;
+  left: 20%;
+}
+
+#search-keys-input {
+  border-color: black grey grey black;
+}

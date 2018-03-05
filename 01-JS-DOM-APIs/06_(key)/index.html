@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title></title>
+
+    <meta name="description" content="CSS practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <header>
+      <h1>Table generator</h1>
+    </header>
+
+    <section class="main-section">
+      <header>
+        <h3>Insert a matrix to generate a table...</h3>
+      </header>
+      <label for="matrix-input">
+        <em>Example:</em><br>
+        [["title1","title2","title3","title4","title5"],<br>
+        [1,"ape1","name1","dd/mm/yyyy","true"],<br>
+        [2,"ape2","name2","dd/mm/yyyy","true"]]<br>
+        <br>
+        <em>Notes:</em><br>
+        - Don't use '' (single quotes)<br>
+        - Tested with numeric and string values.<br>
+        - If matrix input area turns red after pressing a generation means  that
+        there is a sintax error<br>
+        </span>
+      </label>
+      <br>
+      <textarea id="matrix-input" rows="8" cols="80" placeholder=""></textarea>
+      <br>
+      <button type="button" name="button" onclick="getTableFromStringMatrix()">Generate table!</button>
+      <br>
+    </section>
+
+    <footer>
+      <p>@Galias <a href="mailto:alias_gerardo@yahoo.com.ar">Contact!</a></p>
+    </footer>
+
+  </body>
+
+</html>
