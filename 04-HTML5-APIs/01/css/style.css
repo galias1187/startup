@@ -1,0 +1,9 @@
+html {
+  font-family: monospace, arial, sans-serif;
+  font-size: 14px;
+}
+
+header, section, footer {
+  width: 90%;
+  margin: auto;
+}

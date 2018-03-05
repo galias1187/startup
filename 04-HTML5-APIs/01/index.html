@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Topic 04</title>
+
+    <meta name="description" content="CSS practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <header>
+      <h1>Insert header here!</h1>
+    </header>
+
+    <section id="main-section">
+      <article>
+        <h3>Local storage test</h3>
+
+        <!-- adds ondrop to support dropping into text area-->
+        <textarea id="input-text-area" name="input-area" rows="24" cols="80"
+        ondrop="drop(event)" ondragover="allowDrop(event)"></textarea>
+        <br>
+        <button type="button" name="save-button" onclick="saveTextArea()">Save</button>
+        <button type="button" name="delete-button" onclick="deleteStoredTextArea()">Delete saved content</button>
+
+      </article>
+    </section>
+
+    <footer>
+      <p>@Galias <a href="mailto:alias_gerardo@yahoo.com.ar">Contact!</a> </p>
+    </footer>
+
+  </body>
+
+</html>
