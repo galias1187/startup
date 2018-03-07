@@ -332,11 +332,10 @@ class MovieList extends React.Component {
 
   //Renders the movie list
   render() {
-    let key = 0;
 
     //Renders a movie component for each movie in this component's movies prop.
-    const movies = this.props.movies.map((movie) => {
-      return this.renderMovie(movie, key++);
+    const movies = this.props.movies.map((movie, index) => {
+      return this.renderMovie(movie, index);
     });
 
     return (
